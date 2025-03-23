@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    position: relative;
+    width: 250px;
+    height: 300px;
+}
+
+.p1, .p2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.p2 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.container:hover .p2 {
+    opacity: 1;
+}
+
+
+.container:hover .p1 {
+    opacity: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <img src="P1.gif" alt="First GIF" class="p1">
+    <img src="P2.gif" alt="Second GIF" class="p2">
+</div>
+
+</body>
+</html>

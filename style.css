@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.mainDiv {
+    position: absolute; top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(97,108,12);
+    background: linear-gradient(25deg, rgba(97,108,12,1) 0%, rgba(184,181,119,1) 95%); 
+}
+ul {
+    
+    padding: 20px;
+}
+
+.pillarDiv{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    background:rgba(9, 9, 61) ;
+    box-shadow: 0px 5px 5px 5px rgb(9, 9, 61); 
+}
+
+.Header{
+    display: flex;
+    justify-content: center;
+}
+.ice{
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+}
+.d1 { 
+    border-radius: 8px;
+    position: relative;
+    width: 250px;
+    height: 400px;
+    background: rgba(43, 43, 43, 0.473);
+    margin-top: 25px;
+    left: 70%;
+    transform: translateX(-50%);  
+}
+.d2 { 
+    position: relative;
+    width: 250px;
+    height: 400px;
+    margin-top: 25px;
+    left: 25%;
+    transform: translateX(-50%);
+    }
+/* ------------------------------help dots------------------------------ */
+.dot1 {
+height: 25px;
+width: 25px;
+padding: 8px;
+margin-top: 45px;
+background-color: #00ff37;
+border-radius: 50%;
+display: inline-block;      
+cursor: pointer;
+}
+.dot1:hover ~ .textBubble1{
+    opacity: 1;
+}
+.dot2:hover ~ .textBubble2{
+    opacity: 1;
+}
+.dot3:hover ~ .textBubble3 {
+    opacity: 1;
+}
+
+.textBubble1{
+    border-radius: 3px;
+    left: 15px;
+    position: absolute;
+    z-index: -1;
+    background-color: aliceblue;
+    padding: 10px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+.textBubble1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 100px;
+  bottom: -24px;
+}
+.textBubble2{
+    border-radius: 3px;
+    left: 15px;
+    position: absolute;
+    z-index: -1;
+    background-color: aliceblue;
+    padding: 10px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+.textBubble2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 100px;
+  bottom: -24px;
+}
+.textBubble3{
+    border-radius: 3px;
+    left: 15px;
+    position: absolute;
+    z-index: -1;
+    background-color: aliceblue;
+    padding: 10px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+.textBubble3:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 100px;
+  bottom: -24px;
+}
+.textBubble4{
+    left: 15px;
+    position: absolute;
+    background-color: aliceblue;
+    padding: 10px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+.textBubble4:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 100px;
+  bottom: -24px;
+}
+.p1:hover ~ .textBubble4{
+    opacity: 1;
+}
+.dot2 {
+height: 25px;
+width: 25px;
+padding: 8px;
+margin-top: 5px;
+background-color: #ffe600;
+border-radius: 50%;
+display: inline-block;
+}
+.dot3 {
+height: 25px;
+width: 25px;
+padding: 8px;
+margin-top: 5px;
+background-color: #ff0000;
+border-radius: 50%;
+display: inline-block;
+}
+
+      /* ------------------------------Penguine------------------------------ */
+      
+.p1 {
+width: 250px;
+height: 300px;
+position: absolute;
+left: 0;
+bottom: 0;
+opacity: 1;
+z-index: 5;
+}
+.p2 {
+
+width: 250px;
+height: 300px;
+position:absolute;
+left: 0;
+bottom: 0;
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+}
+
