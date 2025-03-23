@@ -205,3 +205,35 @@ opacity: 0;
 transition: opacity 0.3s ease-in-out;
 }
 
+@media (max-width: 768px) { /* Tablets */
+    .mainDiv {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .pillarDiv {
+        width: 90%; /* Increase width on smaller screens */
+        max-width: none;
+    }
+
+    .d1, .d2 {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile Phones */
+    .d1, .d2 {
+        height: auto;
+    }
+
+    .dot1, .dot2, .dot3 {
+        height: 15px;
+        width: 15px;
+        padding: 3px;
+    }
+
+    .p1, .p2 {
+        width: 90%;
+        height: auto;
+    }
+}
