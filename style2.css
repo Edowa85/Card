@@ -1,0 +1,53 @@
+
+@media (max-width: 768px) { /* Tablets */
+    .mainDiv {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .pillarDiv {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .d1, .d2 {
+        width: 90%;
+        max-width: 250px;
+        min-height: 300px;
+    }
+
+    .textBubble1, .textBubble2, .textBubble3, .textBubble4 {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile Phones */
+    .mainDiv {
+        padding: 10px;
+    }
+
+    .d1, .d2 {
+        width: 90%;
+        max-width: 220px;
+        min-height: 250px;
+    }
+
+    .dot1, .dot2, .dot3 {
+        height: clamp(10px, 4vw, 25px);
+        width: clamp(10px, 4vw, 25px);
+        padding: 2px;
+    }
+
+    .p1, .p2 {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    .textBubble1, .textBubble2, .textBubble3, .textBubble4 {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+}
+
