@@ -1,0 +1,11 @@
+#parallax {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), 
+                      url(../assets/mountain.png), 
+                      url(../assets/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
