@@ -5,4 +5,22 @@
     .IceBreaker {
         display: none;
     }
+    .footer {
+        background-image: url(../assets/footer.png);
+        /* background-repeat: repeat-x; */
+        background-position: bottom;
+        width: 100%;
+        height: auto; /* Allows background to scale properly */
+        min-height: 100px; /* Minimum footer height */
+        color: white;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        padding: 20px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        bottom: 0;
+        z-index: 11;
+    }
   }
